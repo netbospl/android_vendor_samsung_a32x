@@ -515,20 +515,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a32x/proprietary/vendor/etc/str/str_preference_data.dat:$(TARGET_COPY_OUT_VENDOR)/etc/str/str_preference_data.dat \
     vendor/samsung/a32x/proprietary/vendor/etc/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json \
     vendor/samsung/a32x/proprietary/vendor/etc/throttle.sh:$(TARGET_COPY_OUT_VENDOR)/etc/throttle.sh \
-    vendor/samsung/a32x/proprietary/vendor/etc/vintf/manifest/android.hardware.health@2.1-samsung.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.health@2.1-samsung.xml \
-    vendor/samsung/a32x/proprietary/vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-mtk-dsp-gpu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-mtk-dsp-gpu.xml \
-    vendor/samsung/a32x/proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml \
-    vendor/samsung/a32x/proprietary/vendor/etc/vintf/manifest/sec.android.hardware.nfc@1.2-service.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/sec.android.hardware.nfc@1.2-service.xml \
-    vendor/samsung/a32x/proprietary/vendor/etc/vintf/manifest/vendor.samsung.hardware.authfw@1.0-manifest.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor.samsung.hardware.authfw@1.0-manifest.xml \
-    vendor/samsung/a32x/proprietary/vendor/etc/vintf/manifest/vendor.samsung.hardware.hqm@1.0-manifest.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor.samsung.hardware.hqm@1.0-manifest.xml \
-    vendor/samsung/a32x/proprietary/vendor/etc/vintf/manifest/vendor.samsung.hardware.thermal@1.0-manifest.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor.samsung.hardware.thermal@1.0-manifest.xml \
-    vendor/samsung/a32x/proprietary/vendor/etc/vintf/manifest/vendor.samsung.hardware.tlc.atn@1.0-manifest.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor.samsung.hardware.tlc.atn@1.0-manifest.xml \
-    vendor/samsung/a32x/proprietary/vendor/etc/vintf/manifest/vendor.samsung.hardware.tlc.hdm@1.1-manifest.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor.samsung.hardware.tlc.hdm@1.1-manifest.xml \
-    vendor/samsung/a32x/proprietary/vendor/etc/vintf/manifest/vendor.samsung.hardware.tlc.iccc@1.0-manifest.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor.samsung.hardware.tlc.iccc@1.0-manifest.xml \
-    vendor/samsung/a32x/proprietary/vendor/etc/vintf/manifest/vendor.samsung.hardware.tlc.tima@1.0-manifest.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor.samsung.hardware.tlc.tima@1.0-manifest.xml \
-    vendor/samsung/a32x/proprietary/vendor/etc/vintf/manifest/vendor.samsung.hardware.vibrator-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor.samsung.hardware.vibrator-default.xml \
-    vendor/samsung/a32x/proprietary/vendor/etc/vintf/manifest/vendor.samsung.hardware.wifi.hostapd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor.samsung.hardware.wifi.hostapd.xml \
-    vendor/samsung/a32x/proprietary/vendor/etc/vintf/manifest/vendor.samsung.hardware.wifi@2.0-service.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor.samsung.hardware.wifi@2.0-service.xml \
     vendor/samsung/a32x/proprietary/vendor/etc/virtual-spn-conf-by-efgid1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efgid1.xml \
     vendor/samsung/a32x/proprietary/vendor/etc/virtual-spn-conf-by-efpnn.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efpnn.xml \
     vendor/samsung/a32x/proprietary/vendor/etc/virtual-spn-conf-by-efspn.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efspn.xml \
@@ -2033,6 +2019,22 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a32x/proprietary/vendor/tee/ffffffff-0000-0000-0000-000000000030:$(TARGET_COPY_OUT_VENDOR)/tee/ffffffff-0000-0000-0000-000000000030 \
     vendor/samsung/a32x/proprietary/vendor/tee/tui/resolution_common/ID00000100:$(TARGET_COPY_OUT_VENDOR)/tee/tui/resolution_common/ID00000100 \
     vendor/samsung/a32x/proprietary/vendor/tima_measurement_info:$(TARGET_COPY_OUT_VENDOR)/tima_measurement_info
+
+LOCAL_VINTF_FRAGMENTS := \
+    vendor/samsung/a32x/proprietary/vendor/etc/vintf/manifest/android.hardware.health@2.1-samsung.xml \
+    vendor/samsung/a32x/proprietary/vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-mtk-dsp-gpu.xml \
+    vendor/samsung/a32x/proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml \
+    vendor/samsung/a32x/proprietary/vendor/etc/vintf/manifest/sec.android.hardware.nfc@1.2-service.xml \
+    vendor/samsung/a32x/proprietary/vendor/etc/vintf/manifest/vendor.samsung.hardware.authfw@1.0-manifest.xml \
+    vendor/samsung/a32x/proprietary/vendor/etc/vintf/manifest/vendor.samsung.hardware.hqm@1.0-manifest.xml \
+    vendor/samsung/a32x/proprietary/vendor/etc/vintf/manifest/vendor.samsung.hardware.thermal@1.0-manifest.xml \
+    vendor/samsung/a32x/proprietary/vendor/etc/vintf/manifest/vendor.samsung.hardware.tlc.atn@1.0-manifest.xml \
+    vendor/samsung/a32x/proprietary/vendor/etc/vintf/manifest/vendor.samsung.hardware.tlc.hdm@1.1-manifest.xml \
+    vendor/samsung/a32x/proprietary/vendor/etc/vintf/manifest/vendor.samsung.hardware.tlc.iccc@1.0-manifest.xml \
+    vendor/samsung/a32x/proprietary/vendor/etc/vintf/manifest/vendor.samsung.hardware.tlc.tima@1.0-manifest.xml \
+    vendor/samsung/a32x/proprietary/vendor/etc/vintf/manifest/vendor.samsung.hardware.vibrator-default.xml \
+    vendor/samsung/a32x/proprietary/vendor/etc/vintf/manifest/vendor.samsung.hardware.wifi.hostapd.xml \
+    vendor/samsung/a32x/proprietary/vendor/etc/vintf/manifest/vendor.samsung.hardware.wifi@2.0-service.xml
 
 PRODUCT_PACKAGES += \
     ImsSettings \
