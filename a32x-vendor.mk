@@ -2042,6 +2042,5 @@ PRODUCT_PACKAGES += \
     GoogleOneTimeInitializer \
     GoogleServicesFramework \
     SetupWizard \
-    StorageManager \
     SystemUI \
     WallpaperCropper
